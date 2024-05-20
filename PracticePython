@@ -1,0 +1,44 @@
+Number Mirror
+1.Write a program that takes a number N as the input, and prints it to the output.
+N = input()
+print(N)
+
+2.Rearrange Code
+You want to input two integers, and output their sum.
+Rearrange the code given, so that it does the above task.
+c = a + b
+a, b = map(int, input().split()) 
+print(c)
+
+3.Chef and Instant Noodles
+Chef has invented 1-minute Instant Noodles. As the name suggests, each packet takes exactly 1 minute to cook.
+Chef's restaurant has X stoves and only 1 packet can be cooked in a single stove at any minute.
+How many customers can Chef serve in 𝑌 minutes if each customer orders exactly 1 packet of noodles?
+Input Format
+The first and only line of input contains two space-separated integers 
+X and Y — the number of stoves and the number of minutes, respectively.
+Output Format
+Print a single integer, the maximum number of customers Chef can serve in Y minutes
+def max_customers(X, Y):
+    return X * Y
+if __name__ == "__main__":
+    X, Y = map(int, input().split())
+    result = max_customers(X, Y)
+    print(result)
+
+4.CodeChef Learn Problem Solving
+In the new CodeChef Learn module, under the "Learn Problem Solving" section, there are two courses for each language.
+For eg. "Python Beginner - Part 1" and "Python Beginner - Part 2". 
+These courses help you get started with CodeChef contests.
+Currently there are courses for 4 languages, and hence there are 8 courses in this section. But suppose there are courses for N languages, what will be the total number of courses in this section?
+Input Format
+The only line of input will contain a single integer N, denoting the number of languages for which there are courses.
+Output Format
+Output on a single line the total number of courses in the section.
+def total_courses(N):
+    return N * 2
+if __name__ == "__main__":
+    N = int(input())
+    result = total_courses(N)
+    print(result)
+
