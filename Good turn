@@ -1,0 +1,10 @@
+def is_turn_good(X, Y):
+    return (X + Y) > 6
+if __name__ == "__main__":
+    T = int(input())
+    for _ in range(T):
+        X, Y = map(int, input().split())
+        if is_turn_good(X, Y):
+            print("YES")
+        else:
+            print("NO")
