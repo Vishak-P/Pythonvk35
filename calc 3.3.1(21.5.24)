@@ -1,0 +1,21 @@
+import math
+x,y=map(int,input().split())
+z=int(input())
+a=float(input())
+if z==1:
+	print("Addition = \n",x+y)
+elif z==2:
+	print("Subtraction = \n",x-y)
+elif z==3:
+	print("Product = \n",x*y)
+elif z==4:
+	print("Division = \n",x/y)
+elif z==5:
+	print("Modulus = \n",x%y)
+elif z==6:
+	a=(x+y)/2.0
+	print("Average = \n",a)
+elif z==7:
+	print("Power = \n",pow(x,y))
+else:
+  	print("Enter valid option\n")
