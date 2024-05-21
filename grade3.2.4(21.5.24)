@@ -1,0 +1,15 @@
+s1,s2,s3,s4,s5=map(int,input().split())
+tot=s1+s2+s3+s4+s5
+avg=tot/3
+if avg>=90:
+  print("The grade is A\n")
+elif avg>=80:
+	print("The grade is B\n")
+elif avg>=70:
+	print("The grade is C\n")
+elif avg>=60:
+	print("The grade is D\n")
+elif avg>=50:
+	print("The grade is E\n")
+else:
+  print("The grade is F\n")
