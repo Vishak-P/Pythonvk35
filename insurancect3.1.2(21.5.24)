@@ -1,0 +1,5 @@
+status,gender,age=input("Status: "),input("Gender: "),int(input("Age: "))
+if status=='m' or status=='u' and gender=='m' and age > 30 or gender == 'f' and age > 25:
+  print("eligible for insurance")
+else:
+  print("Not eligible for insurance")
