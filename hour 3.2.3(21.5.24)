@@ -1,0 +1,6 @@
+hour,min=map(int,input().split())	
+if hour<=0 or hour>11:
+  print("Invalid input\n");
+elif hour>0 and hour<11:	
+  min=hour*60;
+	print(min);
