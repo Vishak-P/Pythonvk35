@@ -1,0 +1,11 @@
+day=int(input())
+if day>0 and day<=5:
+	print("Your fine : Rs.0.50\n")
+elif day>5 and day<=10:
+	print("Your fine : Rs.1.00\n")
+elif day>10 and day<30:
+	print("Your fine : Rs.5.00\n")
+elif day>=30:
+	print("Your membership has been cancelled\n")
+else:
+	print("No Fine\n")
