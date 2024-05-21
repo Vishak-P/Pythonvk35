@@ -1,0 +1,12 @@
+a = int(input("Enter the length of side a: "))
+b = int(input("Enter the length of side b: "))
+c = int(input("Enter the length of side c: "))
+d = int(input("Enter the length of side d: "))
+if a == b and c == d:
+    print("A rectangle can be formed with the given side lengths.")
+elif a == c and b == d:
+    print("A rectangle can be formed with the given side lengths.")
+elif a == d and b == c:
+    print("A rectangle can be formed with the given side lengths.")
+else:
+    print("A rectangle cannot be formed with the given side lengths.")
