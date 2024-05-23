@@ -1,0 +1,6 @@
+first_array = list(map(int, input("Enter the elements of the first array separated by spaces: ").split()))
+second_array = list(map(int, input("Enter the elements of the second array separated by spaces: ").split()))
+max_first = max(first_array)
+min_second = min(second_array)
+product = max_first * min_second
+print("Product of max element of first array and min element of second array:", product)
