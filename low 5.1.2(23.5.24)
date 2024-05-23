@@ -1,0 +1,11 @@
+elements = input("Enter the elements of the array separated by spaces: ").split()
+target = input("Enter the element you want to search for: ")
+found = False
+for i in range(len(elements)):
+    if elements[i] == target:
+        print("Element found at position:", i + 1)
+        found = True
+        break
+if not found:
+    print("Element not found in the array.")
+
