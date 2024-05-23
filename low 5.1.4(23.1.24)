@@ -1,0 +1,10 @@
+numbers = input("Enter some numbers separated by spaces: ").split()
+numbers = [int(num) for num in numbers]
+print("Initial array:", numbers)
+insert_num = int(input("Enter the number to insert: "))
+insert_position = int(input("Enter the position to insert: "))
+numbers.insert(insert_position - 1, insert_num)
+print("Array after insertion:", numbers)
+delete_position = int(input("Enter the position to delete: "))
+deleted_num = numbers.pop(delete_position - 1)
+print("Array after deletion of number at position {} (deleted number: {}):".format(delete_position, deleted_num), numbers)
