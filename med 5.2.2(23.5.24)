@@ -1,0 +1,4 @@
+elements = input("Enter the elements of the array separated by spaces: ").split()
+elements = [int(element) for element in elements]
+elements.sort()
+print("Sorted array in ascending order:", elements)
