@@ -1,0 +1,16 @@
+def store_elements():
+    elements = []
+    n = int(input("Enter the number of elements: "))
+    for i in range(n):
+        element = input("Enter element {}: ".format(i+1))
+        elements.append(element) 
+    return elements
+def display_elements(elements):
+    print("Elements in the array:")
+    for element in elements:
+        print(element)
+def main():
+    elements = store_elements()
+    display_elements(elements)
+if __name__ == "__main__":
+    main()
