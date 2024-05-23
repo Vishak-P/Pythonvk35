@@ -1,0 +1,10 @@
+numbers = input("Enter some numbers separated by spaces: ").split()
+numbers = [float(num) for num in numbers]
+mean = sum(numbers) / len(numbers)
+deviations = [num - mean for num in numbers]
+squared_deviations = [deviation ** 2 for deviation in deviations]
+variance = sum(squared_deviations) / len(numbers)
+print("Numbers:", numbers)
+print("Mean:", mean)
+print("Deviations from the mean:", deviations)
+print("Variance:", variance)
