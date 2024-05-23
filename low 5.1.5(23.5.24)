@@ -1,0 +1,7 @@
+elements = input("Enter the elements of the array separated by spaces: ").split()
+elements = [int(element) for element in elements]
+unique_elements = [] 
+for element in elements:
+    if element not in unique_elements:
+        unique_elements.append(element)
+print("Unique elements in the array:", unique_elements)
