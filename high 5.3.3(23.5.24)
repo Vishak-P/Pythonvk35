@@ -1,0 +1,12 @@
+sorted_array = list(map(int, input("Enter the sorted array with duplicate elements separated by spaces: ").split()))
+last_duplicate_element = None
+last_duplicate_index = None
+for i in range(len(sorted_array) - 1):
+    if sorted_array[i] == sorted_array[i + 1]:
+        last_duplicate_element = sorted_array[i]
+        last_duplicate_index = i + 1
+if last_duplicate_element is not None:
+    print("Last duplicate element:", last_duplicate_element)
+    print("Index of last duplicate element:", last_duplicate_index)
+else:
+    print("No duplicate element found.")
